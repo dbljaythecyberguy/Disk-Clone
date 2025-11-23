@@ -27,6 +27,15 @@ This laptop running Windows 11 Pro has run out of disk space on it's 256Gb M.2 N
    ![Disk Clean-up Utility](/DiskCLeanup.png "Disk Clean-up Utility")
    ![Disk Clean-up Utility](/DiskCLeanupDelete.png "Disk Clean-up Utility")
 
-2. 
+2. Plug M.2 NMVE drive into the external dock. Then plug the docks usb cable into an open usb port on laptop.
+
+3. Run Macrium Reflect to Clone Windows disk drive(C drive) in its entirety.
+   Select the Windows drive to clone, ensuring that all the partitions are checked(they should be by default).
+   Select the drive you want put the clone on(target disk drive).
+   Click ok that Bitlocker will not be enabled on the new clone drive of Windows.
+   Click next on the schedule screen. We will not be using the scheduling function.
+   Verfiy the info on the clone summary screen, then click finish.
+   Click continue when the warning screen pops up about deleting any data on the target disk drive.
+   A successful clone should include 3 partitions. A MBR sometimes listed as system drive, Windows(C drive), and a Windows Recovery drive.
 
 
