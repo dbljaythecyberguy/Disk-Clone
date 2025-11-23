@@ -7,10 +7,10 @@ This laptop running Windows 11 Pro has run out of disk space on it's 256Gb M.2 N
 ### Skills Learned/Demonstrated
 
 - Advanced understanding of disk management utility, including partition arrangement.
-- Basics of hardware handling, mitigating ESD(electro-static discharge), opening laptop case     	without stripping screws, swapping out M.2 drives.
+- Basics of hardware handling, mitigating ESD(electro-static discharge), opening laptop case without stripping screws, swapping out M.2 drives.
 - Utilize OTS software to clone a complete Windows disk with all of its partitions.
-- Utilize sha256 checksums for any software downloaded from internet to verify file 	integrity.
-- Project planning. Break down the project goal into logical steps of actions needed to 	complete the project. Adjust or add steps if problems arise.
+- Utilize sha256 checksums for any software downloaded from internet to verify file integrity.
+- Project planning. Break down the project goal into logical steps of actions needed to complete the project. Adjust or add steps if problems arise.
 
 ### Tools Used
 
@@ -25,6 +25,8 @@ This laptop running Windows 11 Pro has run out of disk space on it's 256Gb M.2 N
 ## Steps
 1. Run Windows Disk Clean-up utility to shrink size of used disk space to clone.
    ![Disk Clean-up Utility](/DiskCLeanup.png "Disk Clean-up Utility")
+   ![Disk Clean-up Utility](/DiskCLeanupDelete.png "Disk Clean-up Utility")
 
+2. 
 
 
