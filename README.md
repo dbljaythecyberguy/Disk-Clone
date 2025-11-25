@@ -44,7 +44,17 @@ This laptop running Windows 11 Pro has run out of disk space on it's 256Gb M.2 N
 4. Now this is when I ran into a snag. This cloned my 256Gb onto the 2Tb drive, but it left the remainder of 1.69Tb unallocated. I tried using Windows Disk            Management Utility to extend the new Windows partition, but that failed. I'm sorry, I can't remember the exact error message, &  I didn't get a screen capture.     After a quick Google search I found out that you can only extend a partition if it's next to the unallocated partition. This cloning process put the Windows        Recovery partition between the Windows & unallocated partitions. The remedy for this is to move the recovery partition, which I used Gparted Live to do.            Gparted(GNOME Partition Editor) Live is a bootable Linux ISO that a allows various manipulations of partitions.
 
 5. Navigate to gparted.org, then download the latest version.
-   ![Disk Clean-up Utility](/gparted1.png "Gparted Live")
+   ![Gparted](/gparted1.png "Gparted Live")
+   The screen will change to this, and the download will start.
+   ![Gparted](/gparted2.png "Gparted Live")
+
+6. Now once the file has downloaded, lets verify the file integrity by checking the file hash. To do this lets run a sha256 file hash on the command line. Open a      command prompt then cd(change directory) into your downloads folder. List the contents of your downloads folder by typing ls command. Then type the following       line into your command prompt:  certutil -hashfile. Then type the first 3 characters of the gparted file inside a pair of "", mine is "gparted-live-1.7.0-8-        amd64" SHA256, then hit the Tab key. This will autocomplete the file name. Hit enter, and a sha256 hash will be made of the file. Check this against the GParted 
+   websites hash list. If it matches then you have downloaded an unaltered file, which is what we want.
+
+7. Now we'll use Rufus, a utility that writes ISO's to usb drives, making a bootable usb drive running Gparted Live.
+   ![Rufus](/rufus2.png "Rufus")
+   Plug a blank usb drive into a usb port, then Rufus should populate it in the Device field. In the Boot Selection, select Disk or ISO image(please select). To       the right of that you can open the drop down menu and select your file that you want to write, in this case it's gparted-live-1.7.0-8-amd64. Leave everything as    is, and hit start. This will wipe any data on the usb drive, so back up anything you want to keep.
+
    
 
 
