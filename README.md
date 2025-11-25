@@ -28,6 +28,7 @@ This laptop running Windows 11 Pro has run out of disk space on it's 256Gb M.2 N
    ![Disk Clean-up Utility](/DiskCLeanupDelete.png "Disk Clean-up Utility")
 
 2. Plug M.2 NMVE drive into the external dock. Then plug the docks usb cable into an open usb port on laptop.
+   ![M2 Enclosure](/docksmall.png "External M.2 Dock")
 
 3. Run Macrium Reflect to Clone Windows disk drive(C drive) in its entirety.
    Select the Windows drive to clone, ensuring that all the partitions are checked(they should be by default).
@@ -37,5 +38,13 @@ This laptop running Windows 11 Pro has run out of disk space on it's 256Gb M.2 N
    Verfiy the info on the clone summary screen, then click finish.
    Click continue when the warning screen pops up about deleting any data on the target disk drive.
    A successful clone should include 3 partitions. A MBR sometimes listed as system drive, Windows(C drive), and a Windows Recovery drive.
+   ![Macrium Reflect](/Macriumstep1.png "Macrium Reflect")
+   ![Macrium Reflect](/Macriumstep2.png "Macrium Reflect")
+
+4. Now this is when I ran into a snag. This cloned my 256Gb onto the 2Tb drive, but it left the remainder of 1.69Tb unallocated. I tried using Windows Disk            Management Utility to extend the new Windows partition, but that failed. I'm sorry, I can't remember the exact error message, &  I didn't get a screen capture.     After a quick Google search I found out that you can only extend a partition if it's next to the unallocated partition. This cloning process put the Windows        Recovery partition between the Windows & unallocated partitions. The remedy for this is to move the recovery partition, which I used Gparted Live to do.            Gparted(GNOME Partition Editor) Live is a bootable Linux ISO that a allows various manipulations of partitions.
+
+5. Navigate to gparted.org, then download the latest version.
+   ![Disk Clean-up Utility](/gparted1.png "Gparted Live")
+   
 
 
