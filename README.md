@@ -56,6 +56,8 @@ This laptop running Windows 11 Pro has run out of disk space on it's 256Gb M.2 N
    
    Plug a blank usb drive into a usb port, then Rufus should populate it in the Device field. In the Boot Selection, select Disk or ISO image(please select). To       the right of that you can open the drop down menu and select your file that you want to write, in this case it's gparted-live-1.7.0-8-amd64. Leave everything       as is, and hit start. This will wipe any data on the usb drive, so back up anything you want to keep.
 
-   
+8. Now we will reboot the computer with the usb still inserted. If you don't have the proper setting in BIOS to boot from USB first, then just hit the boot selector key at the beginning of powering up. Once Gparted Live boots up you'll see this screen.
+   ![Gparted Live App](/gpartedappstartup.png "Gparted")
+
 
 
