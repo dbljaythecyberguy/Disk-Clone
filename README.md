@@ -58,6 +58,7 @@ This laptop running Windows 11 Pro has run out of disk space on it's 256Gb M.2 N
 
 8. Now we will reboot the computer with the usb still inserted. If you don't have the proper setting in BIOS to boot from USB first, then just hit the boot selector key at the beginning of powering up. Once Gparted Live boots up you'll see this screen.
    ![Gparted Live App](/gpartedappstartup.png "Gparted")
+   Select the top setting. Gparted will show 2 partitions in white, indicating they are initialized, and one that is grey, indicating its uninitialized. The large white partition is the Windows partition that we want to extend. The small white partition is the recovery one. We need to move the recovery partition to the end of the span. We select the recovery partition by clicking on it, then under the partiton menu select move/resize.
 
 
 
